@@ -8,7 +8,6 @@ const app = {};
 // API Key
 app.apiKey = `d9aa9ee0be2d538327e8e9474bd49cbf`;
 app.searchUrl = `https://api.themoviedb.org/3/search/person`;
-app.creditsURL = `https://api.themoviedb.org/3/person/${showActorID()}/combined_credits?`
 app.imagesUrl = `http://image.tmdb.org/t/p/w300_and_h450_bestv2`;
 
 // This function takes the User Query and gets the object, only the ID is selected.
@@ -30,10 +29,24 @@ app.getActorDetails = (userQuery) => {
 }
 
 app.showActorID = function(data){
-  // console.log(data);
-  return data
+  console.log(`${data}`);
 }
 
+// app.creditsURL = `https://api.themoviedb.org/3/person/${showActorID()}/combined_credits?`
+
+// app.getCredits = () => {
+//   $.ajax({
+//       url: `${app.creditsURL}`,
+//       method: 'GET',
+//       dataType: 'json',
+//       data: {
+//         api_key: `${app.apiKey}`,
+//         language: `en-US`,
+//       }
+//   }).then((result) => {
+//       console.log(result);
+//   });
+// }
 
 app.init = function() {
   $('form').on('submit', function(e) {
