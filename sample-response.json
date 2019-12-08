@@ -1,0 +1,250 @@
+[
+  {
+    "popularity": 4.964,
+    "id": 300302,
+    "video": false,
+    "vote_count": 64,
+    "vote_average": 7.5,
+    "title": "Comedy Central Roast of James Franco",
+    "release_date": "2013-09-02",
+    "original_language": "en",
+    "original_title": "Comedy Central Roast of James Franco",
+    "genre_ids": [
+      35
+    ],
+    "backdrop_path": "/ru5eMYLfEQgBsGhxL7SIIpqAKxf.jpg",
+    "adult": false,
+    "overview": "It's James Franco's turn to step in to the celebrity hot seat for the latest installment of The Comedy Central Roast.",
+    "poster_path": "/gabyqAhsFRJao9VOeLvUfJFKbJu.jpg"
+  },
+  {
+    "popularity": 2.776,
+    "vote_count": 9,
+    "video": false,
+    "poster_path": "/9M6YGU8iV9PoXnriRkb29zA5tMn.jpg",
+    "id": 519228,
+    "adult": false,
+    "backdrop_path": "/zMXxEHcFkYLckKNTLF28yNf7fYh.jpg",
+    "original_language": "en",
+    "original_title": "Freaks and Geeks: The Documentary",
+    "genre_ids": [
+      99
+    ],
+    "title": "Freaks and Geeks: The Documentary",
+    "vote_average": 7.3,
+    "overview": "The creators and actors from the TV show 'Freaks and Geeks' share their untold stories and pivotal moments from the making of the series that only aired for one season.",
+    "release_date": "2018-08-02"
+  },
+  {
+    "popularity": 14.236,
+    "vote_count": 2111,
+    "video": false,
+    "poster_path": "/jj84nF5vYRD0HUTowBKcrKk8hZP.jpg",
+    "id": 371638,
+    "adult": false,
+    "backdrop_path": "/cCIWU5b4izIpLeGQnQNW7iTtIDN.jpg",
+    "original_language": "en",
+    "original_title": "The Disaster Artist",
+    "genre_ids": [
+      35,
+      18
+    ],
+    "title": "The Disaster Artist",
+    "vote_average": 7.2,
+    "overview": "An aspiring actor in Hollywood meets an enigmatic stranger by the name of Tommy Wiseau, the meeting leads the actor down a path nobody could have predicted; creating the worst movie ever made.",
+    "release_date": "2017-03-12"
+  },
+  {
+    "popularity": 11.369,
+    "vote_count": 2137,
+    "video": false,
+    "poster_path": "/scEvOPl6ZJctQVnRWHvq0pP0DkM.jpg",
+    "id": 10189,
+    "adult": false,
+    "backdrop_path": "/8lIkPDvw4berZGOodXg3r4bNxaV.jpg",
+    "original_language": "en",
+    "original_title": "Pineapple Express",
+    "genre_ids": [
+      28,
+      35
+    ],
+    "title": "Pineapple Express",
+    "vote_average": 6.6,
+    "overview": "A stoner and his dealer are forced to go on the run from the police after the pothead witnesses a cop commit a murder.",
+    "release_date": "2008-08-06"
+  },
+  {
+    "popularity": 3.747,
+    "id": 86843,
+    "video": false,
+    "vote_count": 16,
+    "vote_average": 6.3,
+    "title": "With Great Power: The Stan Lee Story",
+    "release_date": "2010-07-24",
+    "original_language": "en",
+    "original_title": "With Great Power: The Stan Lee Story",
+    "genre_ids": [
+      99
+    ],
+    "backdrop_path": "/vYwR5GuuqFAq0kdthZutVYer5gr.jpg",
+    "adult": false,
+    "overview": "At 89 years old, Stan Lee's name appears on more than one BILLION comics in 75 countries in 25 languages. Arguably the most recognized name in comics, Stan Lee has co-created over 500 legendary pop culture characters including Spider-Man, Fantastic Four, X-Men, Iron Man, Thor and The Hulk. Stan continues to create new material and entertain fans of all ages with fantastic stories and characters in all areas of entertainment.  With Great Power: the Stan Lee Story, explores the vivid life and imagination of Stan Lee, from the early days of his Depression-era upbringing through the Marvel Age of Comics and beyond! The film uncovers original transcripts, illustrations, photographs and stories of Lee's fascinating journey from his early years at Timely Comics and World War Two, the comic book industry's censorship battle of the 1950's led by Dr. Fredric Wertham, the dawn of Marvel Comics and the legendary characters Stan co-created, to his current company POW! Entertainment.",
+    "poster_path": "/paSNMYfpSrf3sOWbH4C3bHSSapB.jpg"
+  },
+  {
+    "popularity": 13.132,
+    "id": 109414,
+    "video": false,
+    "vote_count": 4056,
+    "vote_average": 6.2,
+    "title": "This Is the End",
+    "release_date": "2013-06-12",
+    "original_language": "en",
+    "original_title": "This Is the End",
+    "genre_ids": [
+      28,
+      35
+    ],
+    "backdrop_path": "/hkuPAYz0TstcAquVpibaDnADqQS.jpg",
+    "adult": false,
+    "overview": "While attending a party at James Franco's house, Seth Rogen, Jay Baruchel and many other celebrities are faced with the apocalypse.",
+    "poster_path": "/1rMzHyOsk1b1ddcFJgMSB6kOASu.jpg"
+  },
+  {
+    "popularity": 18.286,
+    "vote_count": 3792,
+    "video": false,
+    "poster_path": "/2uWb0aSm5cFmRCHP95OdA6hvTEs.jpg",
+    "id": 228967,
+    "adult": false,
+    "backdrop_path": "/p5n7VTC6qmFIuBFjACWURYCAlKP.jpg",
+    "original_language": "en",
+    "original_title": "The Interview",
+    "genre_ids": [
+      28,
+      35
+    ],
+    "title": "The Interview",
+    "vote_average": 6.2,
+    "overview": "Dave Skylark and his producer Aaron Rapaport run the celebrity tabloid show \"Skylark Tonight\". When they land an interview with a surprise fan, North Korean dictator Kim Jong-un, they are recruited by the CIA to turn their trip to Pyongyang into an assassination mission.",
+    "release_date": "2014-12-25"
+  },
+  {
+    "popularity": 17.019,
+    "vote_count": 2359,
+    "video": false,
+    "poster_path": "/b4OaXw2MW97VvIiZE0Sbn1NfxSh.jpg",
+    "id": 4964,
+    "adult": false,
+    "backdrop_path": "/cmEojt7Ykuk6p2argyu0hEDoo0d.jpg",
+    "original_language": "en",
+    "original_title": "Knocked Up",
+    "genre_ids": [
+      35,
+      18,
+      10749
+    ],
+    "title": "Knocked Up",
+    "vote_average": 6.2,
+    "overview": "For fun loving party animal Ben Stone, the last thing he ever expected was for his one night stand to show up on his doorstep eight weeks later to tell him she's pregnant.",
+    "release_date": "2007-06-01"
+  },
+  {
+    "popularity": 11.707,
+    "id": 296100,
+    "video": false,
+    "vote_count": 1003,
+    "vote_average": 6.1,
+    "title": "The Night Before",
+    "release_date": "2015-11-20",
+    "original_language": "en",
+    "original_title": "The Night Before",
+    "genre_ids": [
+      35,
+      12,
+      14
+    ],
+    "backdrop_path": "/oU2QnkVNHyT2bP1EAxRvKz6S5ga.jpg",
+    "adult": false,
+    "overview": "In New York City for their annual tradition of Christmas Eve debauchery, three lifelong best friends set out to find the Holy Grail of Christmas parties since their yearly reunion might be coming to an end.",
+    "poster_path": "/eEGZgNZgN3sZWwoSaL1u2rTGlzj.jpg"
+  },
+  {
+    "popularity": 19.358,
+    "id": 223702,
+    "video": false,
+    "vote_count": 4517,
+    "vote_average": 5.6,
+    "title": "Sausage Party",
+    "release_date": "2016-07-11",
+    "original_language": "en",
+    "original_title": "Sausage Party",
+    "genre_ids": [
+      12,
+      16,
+      35,
+      14
+    ],
+    "backdrop_path": "/zpF8ufiB9mG6IwctoD5ONRjXXv1.jpg",
+    "adult": false,
+    "overview": "Sausage Party, the first R-rated CG animated movie, is about one sausage leading a group of supermarket products on a quest to discover the truth about their existence and what really happens when they become chosen to leave the grocery store.",
+    "poster_path": "/w90cORtNWQAd2k93aFlIBbpQYTC.jpg"
+  },
+  {
+    "popularity": 12.009,
+    "id": 40805,
+    "video": false,
+    "vote_count": 2052,
+    "vote_average": 5.5,
+    "title": "The Green Hornet",
+    "release_date": "2011-01-12",
+    "original_language": "en",
+    "original_title": "The Green Hornet",
+    "genre_ids": [
+      28,
+      80,
+      35
+    ],
+    "backdrop_path": "/obqNqj4tBoUkWzufsMLmDABFLEL.jpg",
+    "adult": false,
+    "overview": "Britt Reid (Seth Rogen), the heir to the largest newspaper fortune in Los Angeles, is a spoiled playboy who has been, thus far, happy to lead an aimless life. After his father (Tom Wilkinson) dies, Britt meets Kato (Jay Chou), a resourceful company employee. Realizing that they have the talent and resources to make something of their lives, Britt and Kato join forces as costumed crime-fighters to bring down the city's most-powerful criminal, Chudnofsky (Christoph Waltz).",
+    "poster_path": "/hZvTFnyqiTiQDO1FRsQvwhFNg3G.jpg"
+  },
+  {
+    "popularity": 3.369,
+    "vote_count": 12,
+    "video": false,
+    "poster_path": "/b6U8GH0NLR3y9YDUzoiAP72xqAd.jpg",
+    "id": 287636,
+    "adult": false,
+    "backdrop_path": "/phJM1oPu1f185vxgqhv0wt2JE7i.jpg",
+    "original_language": "en",
+    "original_title": "The Sound and the Fury",
+    "genre_ids": [
+      18
+    ],
+    "title": "The Sound and the Fury",
+    "vote_average": 5.2,
+    "overview": "A look at the trials and tribulations of The Compson siblings, living in the deep south during the early part of the 20th century.",
+    "release_date": "2015-10-23"
+  },
+  {
+    "popularity": 6.616,
+    "vote_count": 9,
+    "video": false,
+    "poster_path": "/79ZbOA6mwzuDNICi6l0rVLouNDG.jpg",
+    "id": 291867,
+    "adult": false,
+    "backdrop_path": "/5b5C3S4T1VY3Iz6Jwz0O3tHCisa.jpg",
+    "original_language": "en",
+    "original_title": "Zeroville",
+    "genre_ids": [
+      35,
+      18
+    ],
+    "title": "Zeroville",
+    "vote_average": 4.9,
+    "overview": "A young actor arrives in Hollywood in 1969 during a transitional time in the Industry.",
+    "release_date": "2019-09-19"
+  }
+]
