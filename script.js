@@ -9,36 +9,43 @@ app.imagesUrl = `http://image.tmdb.org/t/p/w300_and_h450_bestv2`;
 app.firstActorQuery = '';
 app.secondActorQuery = '';
 
-app.getFirstActorID = $.ajax({
+app.getFirstActorDetails = $.ajax({
   type: 'GET',
   url: `${app.searchUrl}`,
   dataType: 'json',
   data: {
     api_key: `${app.apiKey}`,
-    query: 'Tom Hanks',
+    query: 'Seth Rogen',
     language: `en-US`,
     include_adult: `false`,
   },
 });
 
-app.getSecondActorID = $.ajax({
+app.getSecondActorDetails = $.ajax({
   type: 'GET',
   url: `${app.searchUrl}`,
   dataType: 'json',
   data: {
     api_key: `${app.apiKey}`,
-    query: 'Brad Pitt',
+    query: 'James Franco',
     language: `en-US`,
     include_adult: `false`,
   },
 });
 
-$.when(app.getFirstActorID, app.getSecondActorID)
+$.when(app.getFirstActorDetails, app.getSecondActorDetails)
   .done(function(actor1, actor2) {
-    // console.log(actor1[0].results[0].id);
-    app.firstActorID = actor1[0].results[0].id;
+    app.firstActor = {
+      id: actor1[0].results[0].id,
+      name: actor1[0].results[0].name,
+      photo: `${app.imagesUrl}${actor1[0].results[0].profile_path}`,
+    };
+    console.log(app.firstActor.id, app.firstActor.name, app.firstActor.photo);
+    // console.log(actor1[0].results[0].name);
+    // console.log(`${app.imagesUrl}${actor1[0].results[0].profile_path}`);
+    // app.firstActorID = actor1[0].results[0].id;
     // console.log(actor2[0].results[0].id);
-    app.secondActorID = actor2[0].results[0].id;
+    // app.secondActorID = actor2[0].results[0].id;
   })
   .then(function() {
     app.getMovies = $.ajax({
@@ -53,7 +60,12 @@ $.when(app.getFirstActorID, app.getSecondActorID)
         page: 1,
       },
       success(response) {
-        console.log(response.results[0].original_title);
+        for (let i = 0; i < 10; i++) {
+          console.log(response.results[i].title);
+        }
       },
     });
+  })
+  .catch(function(error) {
+    console.log(`That's an error.`);
   });
