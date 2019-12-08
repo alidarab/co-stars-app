@@ -18,7 +18,6 @@ app.getFirstActorID = $.ajax({
     query: 'Tom Hanks',
     language: `en-US`,
     include_adult: `false`,
-    page: 1,
   },
 });
 
@@ -31,7 +30,6 @@ app.getSecondActorID = $.ajax({
     query: 'Brad Pitt',
     language: `en-US`,
     include_adult: `false`,
-    page: 1,
   },
 });
 
@@ -43,10 +41,8 @@ $.when(app.getFirstActorID, app.getSecondActorID)
     app.secondActorID = actor2[0].results[0].id;
   })
   .then(function() {
-    console.log(app.firstActorID, app.secondActorID);
-
     app.getMovies = $.ajax({
-      type: 'json',
+      type: 'GET',
       url: `${app.discoverURL}`,
       dataType: 'json',
       data: {
@@ -55,6 +51,9 @@ $.when(app.getFirstActorID, app.getSecondActorID)
         with_people: `${app.firstActorID},${app.secondActorID}`,
         language: `en-US`,
         page: 1,
+      },
+      success(response) {
+        console.log(response.results[0].original_title);
       },
     });
   });
