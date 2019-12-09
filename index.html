@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Untitled Movies App</title>
+  <title>🎥 Have your two favorite actors ever been in a movie together?</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -12,25 +12,34 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<div class="container">
-  <div class="row justify-content-md-center">
+<div class="container-fluid user-input-container">
+  <div class="row align-items-center justify-content-center user-input">
     <form>
-      <div class="col-6">
-        <label for="first-actor-name">Enter First Actor Name</label>
-        <input type="text" name="first-actor-name" id="first-actor">
+      <div class="row">
+        <h1 class="app-headline">Have your two favorite actors ever been in a movie together?</h1>
       </div>
-      <div class="col-6">
-        <label for="second-actor-name">Enter Second Actor Name</label>
-        <input type="text" name="second-actor-name" id="second-actor"><br />
+      <div class="row">
+        <div class="col-md-6">
+          <label for="fist-actor-name">Enter the first actor</label>
+          <input type="text" class="form-control form-control-lg" name="first-actor-name" id="first-actor"
+            placeholder="Tom Hanks" required>
+        </div>
+        <div class="col-md-6">
+          <label for="fist-actor-name">Enter the second actor</label>
+          <input type="text" class="form-control form-control-lg" name="second-actor-name" id="second-actor"
+            placeholder="Meryl Streep" required>
+        </div>
       </div>
-      <div class="col-6">
-        <input type="submit" class="btn btn-primary" value="Search">
-      </div>
+      <input type="submit" class="btn btn-outline-light btn-lg btn-block" value="Lets find out!">
     </form>
   </div>
+</div>
 
+<div class="container actor-details-container">
   <div class="row" id="actor-details"></div>
+</div>
 
+<div class="container">
   <div class="row" id="movie-info-container"></div>
 </div>
 
@@ -42,6 +51,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="script.js"></script>
 </body>
 
