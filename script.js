@@ -80,7 +80,7 @@ app.beginSearch = function (first, second) {
           for (let i = 0; i < response.total_results; i++) {
             $("#movie-info-container").append(
               `
-            <div class="card my-5">
+            <div class="card my-5 wow animated fadeIn">
               <div class="row no-gutters">
                 <div class="col-md-4">
                   <img src="${app.imagesUrl}${response.results[i].poster_path}" class="card-img" alt="${response.results[i].title}">
