@@ -1,4 +1,4 @@
-# Co-star App
+# Co-stars App
 
 This app checks if your two favorite stars been in the same film.
 
