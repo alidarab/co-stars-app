@@ -6,15 +6,15 @@ app.searchUrl = `https://api.themoviedb.org/3/search/person`;
 app.discoverUrl = `https://api.themoviedb.org/3/discover/movie`;
 app.imagesUrl = `http://image.tmdb.org/t/p/w300_and_h450_bestv2`;
 
-app.beginSearch = function(first, second) {
+app.beginSearch = function (first, second) {
   app.firstActorQuery = first;
   app.secondActorQuery = second;
 
   // make API calls to get actor details
   app.getFirstActorDetails = $.ajax({
-    type: 'GET',
+    type: "GET",
     url: `${app.searchUrl}`,
-    dataType: 'json',
+    dataType: "json",
     data: {
       api_key: `${app.apiKey}`,
       query: `${app.firstActorQuery}`,
@@ -24,9 +24,9 @@ app.beginSearch = function(first, second) {
   });
 
   app.getSecondActorDetails = $.ajax({
-    type: 'GET',
+    type: "GET",
     url: `${app.searchUrl}`,
-    dataType: 'json',
+    dataType: "json",
     data: {
       api_key: `${app.apiKey}`,
       query: `${app.secondActorQuery}`,
@@ -37,7 +37,7 @@ app.beginSearch = function(first, second) {
 
   // promise return for actor details
   $.when(app.getFirstActorDetails, app.getSecondActorDetails)
-    .done(function(actor1, actor2) {
+    .done(function (actor1, actor2) {
       // store the actors' name, id, and photo. To reduce repetition, the objects are storred in arrays
       app.actorDetails = [
         {
@@ -54,9 +54,9 @@ app.beginSearch = function(first, second) {
     })
     .then(function getAllMovies() {
       app.getMovies = $.ajax({
-        type: 'GET',
+        type: "GET",
         url: `${app.discoverUrl}`,
-        dataType: 'json',
+        dataType: "json",
         data: {
           api_key: `${app.apiKey}`,
           sort_by: `vote_average.desc`,
@@ -67,7 +67,7 @@ app.beginSearch = function(first, second) {
         },
         success(response) {
           // Display information of the searched Actors
-          $('#actor-details').html(`
+          $("#actor-details").html(`
           <div class="col-md-6 text-center wow animated fadeIn">
             <img src="${app.actorDetails[0].photo}" alt="${app.actorDetails[0].name}">
             <h4>${app.actorDetails[0].name}</h4>
@@ -78,34 +78,46 @@ app.beginSearch = function(first, second) {
           </div>`);
           // Display information of Top 10 movies both actors have worked together in.
           for (let i = 0; i < response.total_results; i++) {
-            $('#movie-info-container').append(
-              `<div class="col-4 movie-info text-center wow animated fadeIn">
-            <img src='${app.imagesUrl}${response.results[i].poster_path}' alt='${response.results[i].title}'>
-            <h4>${response.results[i].title}</h4>
-            </div>`
+            $("#movie-info-container").append(
+              `
+            <div class="card my-5">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="${app.imagesUrl}${response.results[i].poster_path}" class="card-img" alt="${response.results[i].title}">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                  <div class="card-body">
+                    <h2 class="card-title">${response.results[i].title}</h2>
+                    <p class="card-text">${response.results[i].overview}</p>
+                    <p class="card-text"><small class="text-muted">Released: ${response.results[i].release_date}</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            `
             );
           }
         },
       });
     })
-    .catch(function(error) {
-      $('#movie-info-container').append(
+    .catch(function (error) {
+      $("#movie-info-container").append(
         `<h1>Sorry, there are no movies in which they've worked</h1>`
       );
     });
 };
 
-app.init = function() {
-  $('form').on('submit', function(e) {
+app.init = function () {
+  $("form").on("submit", function (e) {
     e.preventDefault();
     const userQuery1 = $('input[name="first-actor-name"]').val();
     const userQuery2 = $('input[name="second-actor-name"]').val();
     app.beginSearch(userQuery1, userQuery2);
-    $('input[type="submit"]').attr('disabled', true);
+    $('input[type="submit"]').attr("disabled", true);
   });
   new WOW().init();
 };
 
-$(document).ready(function() {
+$(document).ready(function () {
   app.init();
 });
